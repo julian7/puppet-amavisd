@@ -15,7 +15,7 @@ class {amavisd::files:}
 
 * database options
 ** dbistr: DBI connect string (like: "mysql:database=databasename;host=hostname;port=3306")
-** dbname: database username
+** dbuser: database username
 ** dbpass: database password
 ** domains\_table: which table contains domain info (default: domains)
 ** domains\_domain: which column contains domain name in domains table (default: domain)

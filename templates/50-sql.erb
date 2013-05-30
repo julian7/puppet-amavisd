@@ -1,5 +1,5 @@
 use strict;
-@lookup_sql_dsn =(['<%= @dbistr %>', '<%= @dbname %>', '<%= @dbpass %>']);
+@lookup_sql_dsn =(['<%= @dbistr %>', '<%= @dbuser %>', '<%= @dbpass %>']);
 $sql_select_policy = 'SELECT <%= @domains_domain %> FROM <%= @domains_table %> WHERE CONCAT("@",<%= @domains_domain %>) IN (%k)';
 $defang_virus  = 1;  # MIME-wrap passed infected mail
 $defang_banned = 1;  # MIME-wrap passed mail containing banned name

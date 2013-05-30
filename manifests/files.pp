@@ -1,6 +1,6 @@
 class amavisd::files(
   $dbistr = undef,
-  $dbname = undef,
+  $dbuser = undef,
   $dbpass = undef,
   $domains_table = 'domains',
   $domains_domain = 'domain',
