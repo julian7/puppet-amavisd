@@ -31,7 +31,7 @@ describe 'amavisd::files' do
         mode: '0600',
         content: <<-'EOF')
 use strict;
-@lookup_sql_dsn =(['DBIstring', 'dbuser', 'dbpass']);
+@lookup_sql_dsn =(['DBI:DBIstring', 'dbuser', 'dbpass']);
 $sql_select_policy = 'SELECT domain FROM domains WHERE CONCAT("@",domain) IN (%k)';
 $defang_virus  = 1;  # MIME-wrap passed infected mail
 $defang_banned = 1;  # MIME-wrap passed mail containing banned name
